@@ -1,12 +1,15 @@
 let main = document.querySelector("main");
-
 function createMessageList() {
-  console.log("called");
-  for (let a = 0; a < 8; a++) {
+  isFull = false;
+  for (let a = 0; a < 50; a++) {
     let height = (Math.floor(Math.random() * 3) + 1) * 40;
     let width = (Math.floor(Math.random() * 6) + 4) * 22;
 
-    createMessage(width, height, a);
+    isFull = createMessage(width, height, a);
+    if (isFull) {
+      console.log("broken");
+      break;
+    }
   }
 }
 
@@ -29,8 +32,12 @@ function createMessage(width, height, delay) {
     }, 100);
   });
   main.appendChild(message);
+  let check =
+    message.getBoundingClientRect().y + message.getBoundingClientRect().height >
+    window.innerHeight;
+  return check;
 }
 
 let x = setInterval(() => {
   createMessageList();
-}, 1100);
+}, 1300);

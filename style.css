@@ -30,7 +30,7 @@ header {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
-  border-bottom: 1px solid #111;
+  border-bottom: 1px solid #11111122;
   gap: 10px;
 }
 

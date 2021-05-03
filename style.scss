@@ -50,7 +50,7 @@ main {
     //background-color: yellow;
     display: flex;
     gap: 10px;
-    animation: slide-up 0.9s cubic-bezier(0.645, 0.045, 0.355, 1) both;
+    animation: slide-up 0.8s cubic-bezier(0.645, 0.045, 0.355, 1) both;
 
     animation-delay: calc(var(--delay) * 30ms);
     .bubble {
@@ -70,7 +70,7 @@ main {
       height: var(--bubble-height);
       background-color: #eceff1;
       border-radius: 19px;
-      animation: fill-up 0.9s cubic-bezier(0.645, 0.045, 0.355, 1) both;
+      animation: fill-up 0.8s cubic-bezier(0.645, 0.045, 0.355, 1) both;
       animation-delay: calc(var(--delay) * 30ms);
       opacity: 0.8;
     }

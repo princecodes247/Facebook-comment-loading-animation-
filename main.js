@@ -40,4 +40,4 @@ function createMessage(width, height, delay) {
 
 let x = setInterval(() => {
   createMessageList();
-}, 1300);
+}, 1150);

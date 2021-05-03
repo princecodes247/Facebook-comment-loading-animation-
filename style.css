@@ -63,8 +63,8 @@ main .message {
   display: -ms-flexbox;
   display: flex;
   gap: 10px;
-  -webkit-animation: slide-up 0.9s cubic-bezier(0.645, 0.045, 0.355, 1) both;
-          animation: slide-up 0.9s cubic-bezier(0.645, 0.045, 0.355, 1) both;
+  -webkit-animation: slide-up 0.8s cubic-bezier(0.645, 0.045, 0.355, 1) both;
+          animation: slide-up 0.8s cubic-bezier(0.645, 0.045, 0.355, 1) both;
   -webkit-animation-delay: calc(var(--delay) * 30ms);
           animation-delay: calc(var(--delay) * 30ms);
 }
@@ -83,8 +83,8 @@ main .message .bubble {
   height: var(--bubble-height);
   background-color: #eceff1;
   border-radius: 19px;
-  -webkit-animation: fill-up 0.9s cubic-bezier(0.645, 0.045, 0.355, 1) both;
-          animation: fill-up 0.9s cubic-bezier(0.645, 0.045, 0.355, 1) both;
+  -webkit-animation: fill-up 0.8s cubic-bezier(0.645, 0.045, 0.355, 1) both;
+          animation: fill-up 0.8s cubic-bezier(0.645, 0.045, 0.355, 1) both;
   -webkit-animation-delay: calc(var(--delay) * 30ms);
           animation-delay: calc(var(--delay) * 30ms);
   opacity: 0.8;

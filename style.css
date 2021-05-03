@@ -63,46 +63,8 @@ main .message {
   gap: 10px;
   -webkit-animation: slide-up 0.9s cubic-bezier(0.645, 0.045, 0.355, 1) both;
           animation: slide-up 0.9s cubic-bezier(0.645, 0.045, 0.355, 1) both;
-}
-
-main .message:nth-of-type(1) {
-  -webkit-animation-delay: 0ms;
-          animation-delay: 0ms;
-}
-
-main .message:nth-of-type(1) .bubble {
-  -webkit-animation-delay: 0ms;
-          animation-delay: 0ms;
-}
-
-main .message:nth-of-type(2) {
-  -webkit-animation-delay: 30ms;
-          animation-delay: 30ms;
-}
-
-main .message:nth-of-type(2) .bubble {
-  -webkit-animation-delay: 30ms;
-          animation-delay: 30ms;
-}
-
-main .message:nth-of-type(3) {
-  -webkit-animation-delay: 60ms;
-          animation-delay: 60ms;
-}
-
-main .message:nth-of-type(3) .bubble {
-  -webkit-animation-delay: 60ms;
-          animation-delay: 60ms;
-}
-
-main .message:nth-of-type(4) {
-  -webkit-animation-delay: 90ms;
-          animation-delay: 90ms;
-}
-
-main .message:nth-of-type(4) .bubble {
-  -webkit-animation-delay: 90ms;
-          animation-delay: 90ms;
+  -webkit-animation-delay: calc(var(--delay) * 30ms);
+          animation-delay: calc(var(--delay) * 30ms);
 }
 
 main .message .circle {
@@ -121,6 +83,8 @@ main .message .bubble {
   border-radius: 19px;
   -webkit-animation: fill-up 0.9s cubic-bezier(0.645, 0.045, 0.355, 1) both;
           animation: fill-up 0.9s cubic-bezier(0.645, 0.045, 0.355, 1) both;
+  -webkit-animation-delay: calc(var(--delay) * 30ms);
+          animation-delay: calc(var(--delay) * 30ms);
   opacity: 0.8;
 }
 

@@ -20,7 +20,7 @@ body {
 
 header {
   background-color: #fefefe;
-  height: 50px;
+  height: 8vh;
   width: 100vw;
   display: flex;
   justify-content: space-between;
@@ -39,6 +39,8 @@ header {
 
 main {
   padding: 5px;
+  overflow: hidden;
+  height: 92vh;
   .message {
     position: relative;
     opacity: 1;

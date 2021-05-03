@@ -19,7 +19,7 @@ body {
 
 header {
   background-color: #fefefe;
-  height: 50px;
+  height: 8vh;
   width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -50,6 +50,8 @@ header div:nth-of-type(2) {
 
 main {
   padding: 5px;
+  overflow: hidden;
+  height: 92vh;
 }
 
 main .message {

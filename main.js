@@ -24,11 +24,13 @@ function createMessage(width, height, delay) {
   message.appendChild(circle);
   message.appendChild(bubble);
   message.addEventListener("animationend", () => {
-    message.remove();
+    let y = setTimeout(() => {
+      message.remove();
+    }, 100);
   });
   main.appendChild(message);
 }
 
 let x = setInterval(() => {
   createMessageList();
-}, 1000);
+}, 1100);
